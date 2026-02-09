@@ -14,7 +14,8 @@ let isloggedIn = false;  // boolean datatype
 // number => 2 to the power 53
 // bigint => larger than 2 to the power 53
 // string => "" or ''
-// boolean => true or false
+// boolean => true or git add .
+
 // null => standalone value
 // undefined => standalone value
 // symbol => unique
