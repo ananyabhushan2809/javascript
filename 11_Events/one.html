@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color:aliceblue">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+        <li><img width="200px" id="pink" src="https://tse4.mm.bing.net/th/id/OIP.eAQ-Ya_vor8NNot556284AHaFj?pid=Api&P=0&h=180"
+        alt="photoshop"></li>
+
+        <li><img width="200px" id="yellow" src="https://images.pexels.com/photos/31211274/pexels-photo-31211274.jpeg?cs=srgb&dl=pexels-vishal-verma-1381826-31211274.jpg&fm=jpg"
+        alt="photoshop"></li>
+
+        <li><img width="200px" id="purple" src="https://c02.purpledshub.com/uploads/sites/40/2023/08/JI230816Cosmos220-6d9254f-edited-scaled.jpg"
+        alt="photoshop" </li>
+
+         <li><img width="200px" id="red" src="https://images5.alphacoders.com/431/thumb-1920-431866.jpg"
+        alt="photoshop"></li>
+
+         <li><img width="200px" id="lily" src="https://static.vecteezy.com/system/resources/previews/026/447/797/non_2x/vibrant-petals-of-a-wet-pink-tulip-in-a-formal-garden-generated-by-ai-free-photo.jpg"
+        alt="photoshop"></li>
+
+        
+    
+
+        <li><a style="color:aliceblue" href="https://www.pexels.com/">Pexels</a></li>
+
+        
+
+
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('pink').onclick =function(){
+    //     alert("pink clicked")
+    // }
+
+     //attach event to all images
+   // let images = document.querySelectorAll('img');
+
+    //jQuery - on
+    
+     // type of event, timestamp, defaultPrevented 
+    //target, toElement,srcElement,currentTarget
+    //ClientX,ClientY, screenX , ScreenY
+    // ALTKEY, CTRLKEY, SHIFTKEY, METAKEY,KEYCODE
+
+    // document.getElementById('pink').addEventListener('click', function(e){
+    //     console.log(e);
+       
+    // },)
+ 
+
+    //  document.getElementById('yellow').addEventListener('click', function(){
+    //     alert("yellow clicked")
+    // })
+
+    //   document.getElementById('purple').addEventListener('click', function(){
+    //     alert("purple clicked")
+    // })
+
+    //    document.getElementById('red').addEventListener('click', function(){
+    //     alert("red clicked")
+    // })
+
+    //     document.getElementById('lily').addEventListener('click', function(){
+    //     alert("lily clicked")
+    // })
+
+
+
+    document.getElementbyId('images').addEventListener('click',function(e){
+        console.log("clicked inside the ul");
+    },false)
+
+     document.getElementbyId('pink').addEventListener('click',function(e){
+        console.log("pink clicked");
+    },false)
+    
+   
+</script>
+</html>
